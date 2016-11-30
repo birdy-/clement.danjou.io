@@ -1,0 +1,11 @@
+.DS_STORE
+*.log
+agent.pid
+node_modules
+.eslintcache
+dist
+build
+coverage
+.idea
+public
+db.json
