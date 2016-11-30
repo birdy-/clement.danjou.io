@@ -1,26 +1,6 @@
-@-webkit-keyframes header-background {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 51%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes header-background {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 51%}
-    100%{background-position:0% 50%}
-}
-@keyframes header-background {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 51%}
-    100%{background-position:0% 50%}
-}
-
 #header
     background: #333
-    background: linear-gradient(135deg, #000, #666);
-    background-size: 200% 200%
-    -webkit-animation: header-background 30s linear infinite;
-    -moz-animation: header-background 30s linear infinite;
-    animation: header-background 30s linear infinite;
+    background: linear-gradient(135deg, #000, #888);
     padding-bottom: nav-height
     position: relative
 
@@ -41,15 +21,15 @@
         .head-title-link
           color: #333
           text-decoration: none
-        .white, .blue
+        .white, .colored
           padding: 8px 16px
         .white
             background: #fff
             border-right: 4px solid #ddd
-        .blue
-            border-left: 2px solid #008bfe
+        .colored
+            border-left: 2px solid #e9a10f
             color: #fff
-            background: #309bfe
+            background: #ffb215
     .subtitle
         display: inline-block
         margin-left: 30px

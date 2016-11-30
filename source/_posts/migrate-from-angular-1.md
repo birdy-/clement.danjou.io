@@ -2,6 +2,7 @@
 title: Migrate from Angular 1.x
 date: 2016-01-23 15:59:08
 tags:
+thumbnail: images/migrateAngular.jpg
 ---
 
 For 2 years, we developed a web application based on Angular 1.x. It worked like a charm. This web application is still maintained and gets new features every weeks.
