@@ -13,7 +13,7 @@ customize:
     highlight: androidstudio
     sidebar: right # sidebar position, options: left, right
     thumbnail: true # enable posts thumbnail, options: true, false
-    favicon: # path to favicon
+    favicon: /images/favicon.jpg # path to favicon
     social_links: # for more icons, please see http://fontawesome.io/icons/#brand
         twitter: http://twitter.com/cledanjou
 #        facebook: /
