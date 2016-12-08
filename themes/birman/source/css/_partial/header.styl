@@ -1,0 +1,59 @@
+#header
+    background: #333
+    background: linear-gradient(135deg, #000, #888);
+    position: relative
+    &.header-with-image
+        .header-title
+            font-size: 24px
+    .header-image
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        display: block
+        background-position: center center
+        background-size: cover
+        opacity: 0.6
+
+
+#header-outer
+    position: relative
+    z-index: 1
+    height: 100%;
+    padding: 20px 20px (nav-height + 20px) 20px
+
+#header-inner
+    position: absolute
+    left: 0;
+    right: 0;
+    bottom: 0
+    height: nav-height
+    margin: 0 20px
+
+.header-title
+    line-height: 70px
+    display: inline-block
+    font-size: 36px
+    font-weight: bold
+    cursor: pointer
+    .head-title-link
+      color: #333
+      text-decoration: none
+    .white, .colored
+      padding: 0.2em 0.4em
+    .white
+        background: #fff
+        border-right: 1px solid #ddd
+    .colored
+        border-left: 2px solid #817381
+        color: #fff
+        background: #a795a7
+
+.article-title span
+    display: inline-block
+    margin-top: 30px
+    background: #fff
+    padding: 0.2em 0.4em
+    font-size: 36px
+    text-shadow: 0 1px rgba(0, 0, 0, 0.2)

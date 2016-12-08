@@ -1,7 +1,7 @@
 ---
-title: I'm a french developer who loves cookies.
+title: About
 date: 2016-09-04 15:59:29
+thumbnail: /images/about.jpg
 ---
 
-Hi there, I'm Clément.
-I build web application with Javascript. I work as
+I'm Clément a front-end engineer based&nbsp;in&nbsp;Paris&nbsp;(France) working on cool projects mainly in JavaScript.

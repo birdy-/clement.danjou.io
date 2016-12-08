@@ -1,0 +1,18 @@
+<footer id="footer">
+    <p id="footer-back-to-top"><a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a></p>
+    <ul class="footer-social-links">
+    <% for (var i in theme.customize.social_links) { %>
+        <% if (theme.customize.social_links[i]) { %>
+        <li>
+            <a class="social-tooltip" title="<%= i %>" href="<%- url_for(theme.customize.social_links[i]) %>" target="_blank">
+                <i class="icon fa fa-<%= i %>"></i>
+            </a>
+        </li>
+        <% } %>
+    <% } %>
+    </ul>
+    <div class="credit">
+        <p>&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %></p>
+        <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme forked from Hueman by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+    </div>
+</footer>
