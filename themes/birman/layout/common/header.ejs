@@ -9,7 +9,7 @@
         <h1 class="header-title">
             <a href="<%- url_for() %>" class="head-title-link"><span class="white">Clément</span><span class="colored">Danjou</span></a>
          </h1>
-        <% if (page.title) { %>
+         <% if (page.title) { %>
             <% var time = parseInt(page.content ? page.content.length/900 : 0) %>
             <h2 class="header-article-title">
                 <span><%= page.title %></span><% if (time) { %><span class="header-article-title-time"><i class="icon fa fa-clock-o"></i> <%= time %> minutes</span><% } %>
