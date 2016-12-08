@@ -15,4 +15,6 @@
         </footer>
     </div>
 </article>
-<%- partial('comment/index') %>
+<% if (!post.nocomment) { %>
+ <%- partial('comment/index') %>
+<% } %>
