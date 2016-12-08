@@ -2,14 +2,15 @@
  *    Style Fix : > 960px
 /* ------------------------------------------------------------------------- */
 @media only screen and (min-width: 960px)
-    .nav-container-inner
-        display: block !important
+    #navigation
+        .nav-container-inner
+            display: block !important
 
 /* ------------------------------------------------------------------------- *
  *    Toggle Sidebar s1 : 959px > 480px
 /* ------------------------------------------------------------------------- */
 @media only screen and (min-width: 480px) and (max-width: 959px)
-    #header
+    #navigation
         .nav-container-inner
             display: block !important
             #main-nav
@@ -35,14 +36,9 @@
 @media only screen and (max-width: 479px)
     .container
         padding: 0px
-    #header
-        .subtitle-wrap
-            display: block
-            width: 100%
-            margin-left: 0px
-        .nav-container
-            margin: 0;
-            padding: 0px
+    #navigation.nav-container
+            margin: (- nav-height) 0 0 0
+            padding: 0
             #main-nav-toggle
                 float: none
                 display: block

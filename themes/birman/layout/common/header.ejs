@@ -5,7 +5,7 @@
 <% } else { %>
 <header id="header">
 <% } %>
-    <div id="header-outer" class="outer">
+    <div id="header-inner">
         <h1 class="header-title">
             <a href="<%- url_for() %>" class="head-title-link"><span class="white">Clément</span><span class="colored">Danjou</span></a>
          </h1>
@@ -14,28 +14,28 @@
                 <span><%= page.title %></span>
             </h2>
         <% } %>
-        <div id="header-inner" class="nav-container">
-            <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
-            <div class="nav-container-inner">
-                <ul id="main-nav">
-                    <% for (var i in theme.menu) {
-                            if (i == 'Categories') { %>
-                                <%- list_categories({
-                                    depth: 2,
-                                    style: 'list',
-                                    class: 'main-nav',
-                                    show_count: false,
-                                }) %>
-                            <% } else { %>
-                        <li class="main-nav-list-item" >
-                            <a class="main-nav-list-link" href="<%- url_for(theme.menu[i]) %>"><%= __('index.' + i.toLowerCase()) %></a>
-                        </li>
-                    <% }} %>
-                </ul>
-                <nav id="sub-nav">
-                    <%- partial('search/index') %>
-                </nav>
-            </div>
-        </div>
     </div>
 </header>
+<div id="navigation" class="nav-container">
+    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+    <div class="nav-container-inner">
+        <ul id="main-nav">
+            <% for (var i in theme.menu) {
+                    if (i == 'Categories') { %>
+                        <%- list_categories({
+                            depth: 2,
+                            style: 'list',
+                            class: 'main-nav',
+                            show_count: false,
+                        }) %>
+                    <% } else { %>
+                <li class="main-nav-list-item" >
+                    <a class="main-nav-list-link" href="<%- url_for(theme.menu[i]) %>"><%= __('index.' + i.toLowerCase()) %></a>
+                </li>
+            <% }} %>
+        </ul>
+        <nav id="sub-nav">
+            <%- partial('search/index') %>
+        </nav>
+    </div>
+</div>
