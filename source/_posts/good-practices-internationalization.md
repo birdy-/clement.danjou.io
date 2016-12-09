@@ -7,7 +7,7 @@ tags:
   - localization
 categories:
   - Development
-thumbnail: /images/goodPracticesInternationalization.jpg
+cover: goodPracticesInternationalization.jpg
 ---
 
 Localization is often the third wheel of your application: your product targeted only one country in one language with one currency. It's fine, but it can be a pain in the ass when it comes time to move on.

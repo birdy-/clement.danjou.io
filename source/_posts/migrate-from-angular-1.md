@@ -7,7 +7,7 @@ tags:
   - react
 categories:
   - Development
-thumbnail: /images/migrateAngular.jpg
+cover: migrateAngular.jpg
 ---
 
 For 2 years, we developed a web application based on Angular 1.x. It worked like a charm. This web application is still maintained and gets new features every weeks.

@@ -1,7 +1,7 @@
 ---
 title: About
 date: 2016-09-04 15:59:29
-thumbnail: /images/about.jpg
+cover: about.jpg
 nocomment: true
 ---
 
