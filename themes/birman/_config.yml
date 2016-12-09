@@ -49,7 +49,7 @@ share: default # options: jiathis, bdshare, addtoany, default
 
 # Plugins
 plugins:
-    lightgallery: true # options: true, false
+    lightgallery: false # options: true, false
     google_analytics: UA-55086411-2 # enter the tracking ID for your Google Analytics
     baidu_analytics: # enter Baidu Analytics hash key
 
