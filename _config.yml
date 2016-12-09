@@ -11,7 +11,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://localhost:8080/
+url: http://clement.danjou.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -79,7 +79,7 @@ html_minifier:
 
 css_minifier:
   enable: true
-  exclude: 
+  exclude:
     - '*.min.css'
 
 image_minifier:
@@ -95,7 +95,7 @@ js_minifier:
   mangle: true
   output:
   compress:
-  exclude: 
+  exclude:
     - '*.min.js'
 
 feed:
@@ -108,5 +108,4 @@ feed:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: 
-
+  type:
