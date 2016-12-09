@@ -98,6 +98,13 @@ js_minifier:
   exclude: 
     - '*.min.js'
 
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
