@@ -21,7 +21,7 @@ customize:
         github: https://github.com/birdy-
         linkedin: https://fr.linkedin.com/in/clementdanjou
 #        weibo: /
-#        rss: /
+        rss: /atom.xml
 
 # Widgets
 widgets:
