@@ -39,8 +39,6 @@ src
 │ └── product-list
 │   └── actions
 │     └── index.js
-│   └── reducer
-│     └── index.js
 │   └── components
 │     └── List.js
 │   └── containers
@@ -53,18 +51,22 @@ src
 
 With this structure, each feature has his own actions/reducers/components/... If you need to work on this feature, you have everything within easy reach. Plus, you could package this module as a node module on a private repository.
 
-Import and link your module
+Import your module
 ===========================
 
 Your module needs to export some stuff: a route ? a reducer ? a component ? It depends of the purpose of your module.
 
-Add your route
---------------
+Add your module's route in your app
+-----------------------------------
+Since your module exports a route, you can import it in your app. If you're using a `routes.js` file for example which export all routes, you can just import/export this module route in the same file.
 
+```
+export { MY_MODULE_ROUTE } from 'modules/my-module';
+```
 
-Add your own reducer
+Add your module's reducer in your app
 --------------------
-So, this module needs to communicate with the app. The app handles the store, so the module needs to get a place there. For this, I wrote a small library.
+Your module needs a place in your app store. For this, I wrote a small library.
 
 ```
 export const MODULE_REDUCER_KEY = 'module';
@@ -78,10 +80,40 @@ export const getModuleState = (moduleName, state) => (
   state[MODULE_REDUCER_KEY][moduleName]
 );
 ```
+With this piece of code, you can link your reducer to the app store. Your module call registerModule, and then can access it through `getModuleState`.
 
+Note: you have to register those reducers before initializing your store. Make sure your module call this function early (in module's `index.js` for example).
 
-With `redux`, you need to link your reducer to the store.
+When all modules called the register function, you can create the store as follow:
 
+```
+import { MODULE_REDUCER_KEY, moduleReducers } from 'utils/modules/reducer';
 
-Handle dependencies
-===================
+const appReducer = combineReducers({
+  [MODULE_REDUCER_KEY]: combineReducers(moduleReducers),
+  anotherReducer1,
+  anotherReducer2
+});
+```
+
+Your store now contains a key 'module' which combines all reducers. Your module can access it through `getModuleState`
+
+```
+const mapStateToProps = state => ({
+  search: getModuleState('my-module-key', state).search,
+});
+```
+
+Note: you can also curry the `getModuleState` and get something more elegant
+
+```
+const moduleState = getModuleState('my-module-key');
+
+const mapStateToProps = state => ({
+  search: moduleState(state).search,
+});
+```
+
+Conclusion
+==========
+This is a small article about how to handle large applications. I'll certainly write more articles on this, especially on dependencies.
