@@ -1,6 +1,6 @@
 ---
 title: How to scale React applications
-date: 2016-12-09 18:00:15
+date: 2017-02-16 18:00:15
 tags:
   - javascript
   - react
