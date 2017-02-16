@@ -6,6 +6,7 @@ tags:
   - react
 categories:
   - Development
+cover: howToScaleReactApplications.jpg
 ---
 
 A good start
