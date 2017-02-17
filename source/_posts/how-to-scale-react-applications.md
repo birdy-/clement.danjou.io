@@ -11,7 +11,7 @@ cover: howToScaleReactApplications.jpg
 
 A good start
 ============
-Often, it's easier to get a boilerplate via yeoman or a random git repository. Except the classical issue of the 453 useless dependencies, it will make you work with the "todo-list directory structure".
+Often, it's easier to get a boilerplate via yeoman or a random git repository. Except for the classical issue of the 453 useless dependencies, it will make you work with the "todo-list directory structure".
 
 ```
 src
@@ -55,11 +55,11 @@ With this structure, each feature has his own actions/reducers/components/... If
 Import your module
 ===========================
 
-Your module needs to export some stuff: a route ? a reducer ? a component ? It depends of the purpose of your module.
+Your module needs to export some stuff: a route ? a reducer ? a component ? It depends on the purpose of your module.
 
 Add your module's route in your app
 -----------------------------------
-Since your module exports a route, you can import it in your app. If you're using a `routes.js` file for example which export all routes, you can just import/export this module route in the same file.
+Since your module exports a route, you can import it into your app. If you're using a `routes.js` file for example which export all routes, you can just import/export this module route in the same file.
 
 ```
 export { MY_MODULE_ROUTE } from 'modules/my-module';
