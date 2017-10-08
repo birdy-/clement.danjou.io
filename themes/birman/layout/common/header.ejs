@@ -3,14 +3,14 @@
 <header id="header" class="container header-with-image">
     <div style="background-image: url(<%- thumbnailUrl %>)" class="header-image"></div>
 <% } else { %>
-<header id="header" class="container">
+<header id="header" class="container header-with-image">
 <% } %>
     <div id="header-inner" class="container-inner">
         <h1 class="header-title">
             <a href="<%- url_for() %>" class="head-title-link"><span class="white">Clément</span><span class="colored">Danjou</span></a>
          </h1>
          <% if (page.title) { %>
-            <% var time = parseInt(page.content ? page.content.length/900 : 0) %>
+            <% var time = parseInt(page.layout === 'post' && page.content ? page.content.length/1000 : 0) %>
             <h2 class="header-article-title">
                 <span><%= page.title %></span><% if (time) { %><span class="header-article-title-time"><i class="icon fa fa-clock-o"></i> <%= time %> minutes</span><% } %>
             </h2>

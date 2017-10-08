@@ -1,5 +1,6 @@
 index:
     home: 'Accueil'
+    blog: 'Blog'
     about: 'À propos'
     search: 'Rechercher'
     archive: 'Archive'

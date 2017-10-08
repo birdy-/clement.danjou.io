@@ -72,6 +72,10 @@ thumbnails:
       resize:
         - 800
         - 400
+    smallThumb:
+      resize:
+        - 250
+        - 100
 
 html_minifier:
   enable: true
@@ -104,6 +108,12 @@ feed:
   limit: 20
   hub:
   content:
+
+index_generator:
+  title: Blog
+  path: '/blog'
+  per_page: 10
+  order_by: -date
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

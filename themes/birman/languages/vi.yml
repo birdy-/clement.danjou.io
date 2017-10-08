@@ -1,5 +1,6 @@
 index:
     home: 'Trang chủ'
+    blog: 'Blog'
     about: 'Giới thiệu'
     search: 'Tìm kiếm'
     archive: 'Lưu trữ'

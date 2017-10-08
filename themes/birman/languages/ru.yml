@@ -1,5 +1,6 @@
 index:
     home: 'Главная'
+    blog: 'Blog'
     about: 'О сайте'
     search: 'Поиск'
     archive: 'архив'
