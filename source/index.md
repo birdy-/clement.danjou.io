@@ -13,7 +13,7 @@ I've grown up with the web development: I started HTML at 13 in 1999 and PHP the
 
 I got a degree a Computer Graphic Design in 2008 and started to work for startup and big companies such as Weborama, Speedy, Kookai, LaForet, Demeco, Gandi, Deezer, Alkemics...
 
-Since 2017, I work as software consultant to help companies on their front-end stack, from development to deployment.
+Since 2017, I work as software consultant to help companies on their frontend stack, from development to deployment.
 
 # What can I do for you ?
 
